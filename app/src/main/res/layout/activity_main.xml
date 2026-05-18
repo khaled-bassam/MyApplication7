@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#121212"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvCourseTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تحديث بيانات المساق"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اسم المساق:"
+        android:textColor="#BB86FC"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="أدخل اسم المساق الجديد"
+        android:textColorHint="#757575"
+        android:textColor="#FFFFFF"
+        android:inputType="text"
+        android:backgroundTint="#BB86FC"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="رمز المساق (Course Code):"
+        android:textColor="#BB86FC"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etCourseCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="مثال: CS101"
+        android:textColorHint="#757575"
+        android:textColor="#FFFFFF"
+        android:inputType="textCapCharacters"
+        android:backgroundTint="#BB86FC"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="إلغاء"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3700B3"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="تحديث الآن"
+            android:textColor="#121212"
+            android:backgroundTint="#BB86FC"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
